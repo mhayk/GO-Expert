@@ -11,7 +11,7 @@ func main() {
 	wg := sync.WaitGroup{}
 	wg.Add(10)
 	go publish(ch)
-	reader(ch, &wg)
+	go reader(ch, &wg)
 	wg.Wait()
 }
 
