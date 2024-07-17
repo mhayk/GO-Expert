@@ -18,5 +18,5 @@ message CategoryResponse {
 }
 
 service CategoryService {
-    rpc CreateCategory(CategoryRequest) returns (CategoryResponse) {}
+    rpc CreateCategory(CategoryRequest) returns (Category) {}
 }

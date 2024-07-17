@@ -23,3 +23,14 @@ $ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
 $ protoc --go_out=. --go-grpc_out=. proto/course_category.proto
 $ go mod tidy
 ```
+
+## gRPC Client
+```shell
+$ brew tap ktr0731/evans
+$ brew install evans
+$ evans -r repl
+> package pb
+> service CourseCategoryService
+> call CreateCategory
+> call GetCourseCategory
+```
